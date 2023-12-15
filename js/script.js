@@ -1,4 +1,4 @@
-console.log ('hello world')
+
 
 /*
 Scrivere un programma che chieda all’utente:
@@ -31,5 +31,48 @@ Mi raccomando altrimenti sará tutto piú complicato. Procedete in ordine.
 - function(){//code here}
 
 */
+ 
+
+const btnGenerate = document.querySelector('#generate');
+const ageInputElement = document.querySelector('#age');
+const nameInputElement = document.querySelector('#name');
+const kmInputElement = document.querySelector('#km');
+const price_per_km = 0.21;
 
 
+
+btnGenerate.addEventListener('click', function(){
+
+    // console.log('funziona', ageInputElement.value, kmInputElement.value);
+
+    const age = Number(ageInputElement.value);
+    const km = Number(kmInputElement.value);
+
+    // console.log(age, km, price_per_km);
+    // console.log(km * price_per_km);
+
+    const full_price = km * price_per_km;
+
+    // console.log(full_price);
+
+    if (age < 18) {
+        discount = 0.2
+
+    } else if (age > 65) {
+        discount = 0.4 
+
+    } else {
+        discount = 0
+    }
+        
+        
+
+    const final_price = full_price - (full_price * discount);
+
+
+    console.log(final_price.toFixed(2));
+
+    document.getElementById("Fp").innerHTML = "Il prezzo del biglietto è: " + final_price.toFixed(2) + " €";
+
+    //document.getElementById('finalPrice').innerHTML = final_price;
+})

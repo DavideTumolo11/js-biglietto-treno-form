@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto treno</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body class = "bg-danger">
+
+<div>
+    <h1 class="my-5 d-flex justify-content-center text-white fw-bold ">CALCOLA IL PREZZO DEL BIGLIETTO</h1>
+</div>
+
+<div class="container d-flex flex-column align-items-center border mt-5 p-5 bg-white">
+
+    <div class="d-flex justify-content-center">
+    
+        <div class="d-flex flex-column align-items-center ">
+            <label class="text-danger fs-4" for="Name">Name e Surname </label>
+            <input class="m-3 rounded border-danger" type="text" name="Name" id="name">
+        </div>
+    
+        <div class="d-flex flex-column align-items-center ">
+            <label class="text-danger fs-4 " for="age">Age</label>
+            <input class="m-3 rounded border-danger" type="number" name="Age" id="age">
+        </div>
+    
+        <div class="d-flex flex-column align-items-center ">
+            <label class="text-danger fs-4" for="Km">Km</label>
+            <input class="m-3 rounded border-danger" type="number" name="km" id="km">
+        </div>
+        
+    </div>
+
+    <div class="d-flex mt-5 gap-5  ">
+      
+            <button class="text-danger rounded fs-4 fw-bold   " id="generate">Generate</button>
+        
+            <button class="text-danger rounded fs-4 fw-bold " id="Cancel">Cancel</button>
+        
+    </div>
+
+
+</div>
+
+
+<div>
+    <h1 class="my-4 d-flex justify-content-center text-white fw-bold ">IL TUO BIGLIETTO</h1>
+</div>
+
+
+<div class="container d-flex flex-column border bg-white" style="height: 250px;" id="Fp">
+
+    <div class="d-flex flex-column ">
+        <h1 class="fw-bold fs-2">DETTAGLIO PASSEGGERI</h1>
+
+        <div class="d-flex">
+            <div class="bg-secondary" style="width: 370px; height: 180px;">
+                <H3 class="ms-1 ">NOME PASSEGERO <br> </H3>
+        
+            </div>
+
+
+            <div class="container d-flex  ms-5 justify-content-between ">
+                <div class="me-5 d-flex flex-column justify-content-between">
+                    <h3>Offerta</h3>
+                    <h4></h4>
+                </div>
+            
+                <div class="ms-5 flex-column justify-content-between">
+                    <h3>Carrozza</h3>
+                    <h4></h4>
+                </div>
+            
+                <div class="ms-5 d-flex flex-column justify-content-between">
+                    <h3>Codice CP</h3>
+                    <h4></h4>
+                </div>
+            
+                <div class="ms-5 d-flex flex-column justify-content-between">
+                    <h3>Costo biglietto</h3>
+                    <h4></h4>
+                </div>
+            </div>
+            
+
+
+        </div>
+        
+
+
+    </div>
+
+    
+
+    
+
+
+
+</div>
+
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
