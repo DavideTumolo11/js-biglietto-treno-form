@@ -40,6 +40,22 @@ const kmInputElement = document.querySelector('#km');
 const price_per_km = 0.21;
 
 
+const cancelHtml = document.getElementById('cancel');
+
+cancelHtml.addEventListener('click', function(){
+
+    const bigliettoHtml = document.getElementById('biglietto');
+
+    bigliettoHtml.classList.add('d-none')
+
+    ageInputElement.value = "";
+    kmInputElement.value = "";
+    nameInputElement.value = "";
+
+})
+
+
+
 
 btnGenerate.addEventListener('click', function(){
 
@@ -47,6 +63,8 @@ btnGenerate.addEventListener('click', function(){
 
     const age = Number(ageInputElement.value);
     const km = Number(kmInputElement.value);
+    const ns = (nameInputElement.value);
+    
 
     // console.log(age, km, price_per_km);
     // console.log(km * price_per_km);
@@ -65,14 +83,37 @@ btnGenerate.addEventListener('click', function(){
         discount = 0
     }
         
-        
+    const carrozza = '701';
+    const codposto = 'A45512';
+    const namesurname = document.getElementById('name');
 
     const final_price = full_price - (full_price * discount);
 
+    const costHtml = document.getElementById('cost');
+    costHtml.innerHTML = final_price.toFixed(2);
 
-    console.log(final_price.toFixed(2));
+    const cpHtml = document.getElementById('cp');
+    cpHtml.innerHTML = codposto;
 
-    document.getElementById("Fp").innerHTML = "Il prezzo del biglietto è: " + final_price.toFixed(2) + " €";
+    const carrozzaHtml = document.getElementById('carrozza');
+    carrozzaHtml.innerHTML = carrozza;
+
+    const offertaHtml = document.getElementById('offerta');
+    offertaHtml.innerHTML = final_price.toFixed(2);
+
+    const npHtml = document.getElementById('np');
+    npHtml.innerHTML = namesurname;
+    
+    
+    // console.log(final_price.toFixed(2));
+
+    
+    
+    const bigliettoHtml = document.getElementById('biglietto');
+
+    bigliettoHtml.classList.remove('d-none')
+
+    // document.getElementById("Fp").innerHTML = "Il prezzo del biglietto è: " + final_price.toFixed(2) + " €";
 
     //document.getElementById('finalPrice').innerHTML = final_price;
 })

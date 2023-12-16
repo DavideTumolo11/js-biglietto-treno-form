@@ -43,7 +43,7 @@
       
             <button class="text-danger rounded fs-4 fw-bold   " id="generate">Generate</button>
         
-            <button class="text-danger rounded fs-4 fw-bold " id="Cancel">Cancel</button>
+            <button class="text-danger rounded fs-4 fw-bold " id="cancel">Cancel</button>
         
     </div>
 
@@ -55,15 +55,16 @@
     <h1 class="my-4 d-flex justify-content-center text-white fw-bold ">IL TUO BIGLIETTO</h1>
 </div>
 
-
-<div class="container d-flex flex-column border bg-white" style="height: 250px;" id="Fp">
+<div id="biglietto" class="d-none">
+    <div class="container d-flex flex-column border bg-white" style="height: 250px;" id="Fp">
 
     <div class="d-flex flex-column ">
         <h1 class="fw-bold fs-2">DETTAGLIO PASSEGGERI</h1>
 
         <div class="d-flex">
-            <div class="bg-secondary" style="width: 370px; height: 180px;">
-                <H3 class="ms-1 ">NOME PASSEGERO <br> </H3>
+            <div class="bg-secondary me-5 d-flex flex-column justify-content-between " style="width: 370px; height: 180px;">
+                <H3 class="ms-1">NOME PASSEGERO <br> </H3>
+                <h4 id="np"></h4>
         
             </div>
 
@@ -71,22 +72,22 @@
             <div class="container d-flex  ms-5 justify-content-between ">
                 <div class="me-5 d-flex flex-column justify-content-between">
                     <h3>Offerta</h3>
-                    <h4></h4>
+                    <h4 id="offerta"></h4>
                 </div>
             
-                <div class="ms-5 flex-column justify-content-between">
+                <div class="me-5 d-flex flex-column justify-content-between">
                     <h3>Carrozza</h3>
-                    <h4></h4>
+                    <h4 id="carrozza"></h4>
                 </div>
             
                 <div class="ms-5 d-flex flex-column justify-content-between">
                     <h3>Codice CP</h3>
-                    <h4></h4>
+                    <h4 id="cp"></h4>
                 </div>
             
                 <div class="ms-5 d-flex flex-column justify-content-between">
                     <h3>Costo biglietto</h3>
-                    <h4></h4>
+                    <h4 id="cost"></h4>
                 </div>
             </div>
             
@@ -105,6 +106,8 @@
 
 
 </div>
+</div>
+
 
 
 
