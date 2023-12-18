@@ -98,10 +98,10 @@ btnGenerate.addEventListener('click', function(){
     const carrozzaHtml = document.getElementById('carrozza');
     carrozzaHtml.innerHTML = carrozza;
 
-    const offertaHtml = document.getElementById('offerta');
-    offertaHtml.innerHTML = final_price.toFixed(2);
+    //const offertaHtml = document.getElementById('offerta');
+    //offertaHtml.innerHTML = ridotta;
 
-    const npHtml = document.getElementById('np');
+    const npHtml = document.getElementById('name');
     npHtml.innerHTML = namesurname;
     
     
